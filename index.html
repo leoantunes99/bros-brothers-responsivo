@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>🔧 Mario Encanador</title>
+</head>
+
+<body>
+
+    <header>
+        <img class="img-logo-header" src="./assets/logo-header.png" alt="img-logo-header">
+        <a onclick="cliqueiNoHome()">Home</a>
+        <a onclick="cliqueiNoNossosServicos()">Nossos Serviços</a>
+    </header>
+
+    <main>
+        <section>
+            <img class="img-logo" src="./assets/logo.png" alt="img-logo">
+            <p>Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo!</p>
+            <br>
+            <p>Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
+                entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+                Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p>
+            <button onclick="cliqueiNoBotao()" class="botao-entrar-contato">Entre em contato</button>
+        </section>
+
+        <aside>
+            <img class="img-mario-luigi" src="./assets/mario-luigi.png" alt="img-mario-luigi">
+        </aside>
+    </main>
+
+    <div class="section-nossos-servicos">
+        <div class="nossos-servicos">
+            <img class="img-mario" src="./assets/mario.png" alt="img-mario">
+                <div class="texto-nossos-servicos">  
+                    <h2>Nossos Serviços</h2>
+                    <p class="p-servicos">🚿 Reparos e Instalações Gerais</p>
+                    <p class="p-servicos">🚰 Desentupimentos</p>
+                    <p class="p-servicos">🛠️ Manutenção Preventiva</p>
+                    <p class="p-servicos">🏠 Instalações em Obras ou Reformas</p>
+                    <p class="p-servicos">💧 Outros Serviços</p>
+                </div> 
+            <img class="img-luigi" src="./assets/luigi.png" alt="img-luigi">
+        </div> 
+    </div>
+
+    <div class="caixa-video">
+        <video src="./assets/video.mp4" autoplay muted loop></video>
+        <div class="mask"></div>
+    </div>
+
+    <a href="https://wa.me/5511989046299?text=Ol%C3%A1,%20quero%20ajuda%20dos%20irm%C3%A3os%20Bros!" target="_blank" class="link-whatsapp">
+        <img src="./assets/whatsapp.png" alt="link-whatsapp">
+    </a>
+
+    <div onclick="cliqueiNaMask()" class="mask-form"></div>
+
+    <form action="https://formcarry.com/s/S4T5iznTvtI" method="POST" enctype="multipart/form-data">
+        <input placeholder="Nome Completo" type="text" name="Nome">
+        <input placeholder="Telefone" type="tel" name="Telefone">
+        <input placeholder="E-mail" type="email" name="E-mail">
+        <textarea placeholder="Qual seu problema?" name="Problema"></textarea> 
+        <button class="botao-form" type="submit">Pedir Orçamento</button>
+    </form>
+
+</body>
+
+<script src="./script.js"></script>
+
+</html>
